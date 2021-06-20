@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            display: none;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3 mb-3">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <section id="atividade-12">
+                        <h4>Atividade 12</h4>
+                        <p>Usando Node.js, HTML e CSS, implemente uma API (Application Programming Interface) que receba
+                            três valores X, Y e Z na query string de uma URL e informe se eles podem, ou não, ser os
+                            comprimentos dos lados de um triângulo. Em um triangulo, cada lado é menor que a soma dos
+                            outros dois lados. Os valores devem ser informados num formulário HTML, usando o método GET
+                            do HTTP. Também teste a API usando o Postman/Insomnia.
+                        </p>
+                        <hr />
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="http://127.0.0.1:8080/triangulo" method="get">
+                                    <div class="row mb-3 text-center">
+                                        <div class="col-md-4">
+                                            <label for="lado1" class="form-label">x</label>
+                                            <input type="number" class="form-control form-control-sm" name="lado1"
+                                                id="lado1">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="lado2" class="form-label">y</label>
+                                            <input type="number" class="form-control form-control-sm" name="lado2"
+                                                id="lado2">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="lado3" class="form-label">z</label>
+                                            <input type="number" class="form-control form-control-sm" name="lado3"
+                                                id="lado3">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-sm btn-outline-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
